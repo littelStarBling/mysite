@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <title>Jingqian Zhuang</title>
+</head>
+<body>
+    <header data-aos="slide-down">
+        <div class="logo"><a href="#home">JQ</a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">My work</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="background" data-aos="fade" data-aos-offset="700" data-aos-once= "false"></div>
+    <section id="home">
+        <div class="center-text">
+                <h1>Hi, visitors!
+                    <span class="typing"></span>
+                </h1>
+        </div>
+        <div class="line"></div>
+        <div class="profile">
+                <div class="item"><img src="./image/html.png" alt="html"></div>
+                <div class="item"><img src="./image/css.png" alt="css"></div>
+                <div class="item"><img src="./image/JS.png" alt="js"></div>
+                <div class="item"><img src="./image/sass.png" alt="sass"></div>
+                <div class="item"><img src="./image/xd.png" alt="xd"></div>
+                <div class="item"><img src="./image/ps.png" alt="ps"></div>
+                <div class="item"><img src="./image/cn.png" alt="cn"></div>
+                <div class="item"><img src="./image/en.png" alt="en"></div>
+                <div class="item"><img src="./image/nl.png" alt="nl"></div>
+                <div class="item"><img src="./image/music-player.png" alt="music"></div>
+                <div class="item"><img src="./image/cooking.png" alt="cooking"></div>
+                <div class="item"><img src="./image/gym.png" alt="gym"></div>
+            </div>
+    </section>
+
+    <section id='about' data-aos="flip-down" data-aos-offset="400">
+        <div class="img-container"></div>
+        <div class="about-me">
+            <h2>About me</h2>
+            <p>My name is Jingqian Zhuang. My husband and I live in Delft, the Netherlands.
+                I am learning and practicing web application development. Besides that,
+                I am also interested in design and user experience. 
+                I like sporting, cooking and socializing. I have a lovely bunny. His name is Like.</p>
+        </div>
+    </section>
+    <section id="work">
+        <h2>My work</h2>
+        <div class="work-box">
+            <div class="work one" data-aos="flip-right" data-aos-offset="200">
+                <div class="left">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Web development</h3>
+                    </div>
+                    <button type="button" class="collapsible">View the work</button>
+                    <div class="content">
+                            <p>A responsive travel agent website</p>
+                            <p><a href="http://www.laibatrip.tk/" target="_blank">http://www.laibatrip.tk</a></p>
+                        </div>
+                </div>
+            </div> 
+            <div class="work two" data-aos="flip-right" data-aos-offset="200">
+                <div class="right">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>App idea & UI</h3>
+                    </div>
+                    <button type="button" class="collapsible">View the work</button>
+                    <div class="content">
+                        <video class="video" width="200" controls>
+                            <source src="./video/video1.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <div class="text">
+                            <h3>Are you someone very into cooking and like to invite friends for 
+                                meals at home? This app will make it much easier and fun.</h3><br/>
+                            <ul>
+                                <li>Save your friends' favorite and dislike food and dishes</li>
+                                <li>Bring your matched meal ideas</li>
+                                <li>Generate shopping list automatically</li>
+                                <li>Be inspired by thousands of recipes, tips</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="slidescontainer">
+            <div class="slides">
+                <input type="radio" name="i" id="i1" checked>
+                <input type="radio" name="i" id="i2">
+                <input type="radio" name="i" id="i3">
+                <input type="radio" name="i" id="i4">
+                <input type="radio" name="i" id="i5">
+                <input type="radio" name="i" id="i6">
+                <input type="radio" name="i" id="i7">
+                <input type="radio" name="i" id="i8">
+                <div class="image" id="a">
+                    <div class="img">
+                        <img src="./image/i1.jpg" alt="boxing">
+                    </div>
+                    <div class="text">Barcelona, Spain</div>
+                    <label for="i8" class="left"></label>
+                    <label for="i2" class="right"></label>
+                </div>
+                <div class="image" id="b">
+                    <div class="img">
+                        <img src="./image/i2.jpg" alt="castle">
+                    </div>
+                    <div class="text">Château de Chenonceau, France</div>
+                    <label for="i1" class="left"></label>
+                    <label for="i3" class="right"></label>
+                </div>
+                <div class="image" id="c">
+                    <div class="img">
+                        <img src="./image/i3.jpg" alt="bunny">
+                    </div>
+                    <div class="text">Delft, the Netherlands</div>
+                    <label for="i2" class="left"></label>
+                    <label for="i4" class="right"></label>
+                </div>
+                <div class="image" id="d">
+                    <div class="img">
+                        <img src="./image/i4.jpg" alt="tempel">
+                    </div>
+                    <div class="text">Lianjiang, China</div>
+                    <label for="i3" class="left"></label>
+                    <label for="i5" class="right"></label>
+                </div>
+                <div class="image" id="e">
+                    <div class="img">
+                        <img src="./image/i5.jpg" alt="building">
+                    </div>
+                    <div class="text">Como, Italy</div>
+                    <label for="i4" class="left"></label>
+                    <label for="i6" class="right"></label>
+                </div>
+                <div class="image" id="f">
+                    <div class="img">
+                        <img src="./image/i6.jpg" alt="castle">
+                    </div>
+                    <div class="text">Maria Laach Abbey, Germany
+                    </div>
+                    <label for="i5" class="left"><img src="./image/arrow-left-color.png" alt=""></label>
+                    <label for="i7" class="right"><img src="./image/arrow-right-color.png" alt=""></label>
+                </div>
+                <div class="image" id="g">
+                    <div class="img">
+                        <img src="./image/i7.jpg" alt="castle">
+                    </div>
+                    <div class="text">Castle Keukenhof, the Netherlands
+                    </div>
+                    <label for="i6" class="left"></label>
+                    <label for="i8" class="right"></label>
+                </div>
+                <div class="image" id="h">
+                    <div class="img">
+                        <img src="./image/i8.jpg" alt="castle">
+                    </div>
+                    <div class="text">Kasteel Duivenvoorde, the Netherlands
+                    </div>
+                    <label for="i7" class="left"></label>
+                    <label for="i1" class="right"></label>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <div id="contact" data-aos="flip-down" data-aos-offset="0">
+        <h2>Contact</h2> 
+        <div class="contact-box">
+                <div class="box tel">
+                        <div class="icon">
+                                <img src="./image/callw.png" alt="icon">
+                                </div>
+                        <p>+31(0)636189866</p>
+                    </div>
+                    <div class="box adr">
+                        <div class="icon"><img src="./image/homew.png" alt="icon"></div>
+                        <p>Delft, The Netherlands</p>
+                    </div>
+                    <div class="box email">
+                        <div class="icon"><img src="./image/emailw.png" alt="icon"></div>
+                        <p>jingqian.zhuang@gmail.com</p>
+                    </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo"><a href="#home">JQ</a></div>
+        <p>&copy; 2019 LAIBATRIP all copy right</p>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>
