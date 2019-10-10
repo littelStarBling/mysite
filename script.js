@@ -3,6 +3,14 @@ AOS.init({
     once: true
 });
 
+$(".gallery").magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery:{
+    enabled: true
+  }
+});
+
 const texts = ["I am Jingqian. Welcome to my blog.           "];
 let count = 0;
 let index = 0;

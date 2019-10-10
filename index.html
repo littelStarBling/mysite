@@ -6,22 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700" rel="stylesheet">
     <title>Jingqian Zhuang</title>
 </head>
 <body>
-    <header data-aos="slide-down">
-        <div class="logo"><a href="#home">JQ</a></div>
-        <div class="nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">My work</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="background" data-aos="fade" data-aos-offset="700" data-aos-once= "false"></div>
     <section id="home">
         <div class="center-text">
                 <h1>Hi, visitors!
@@ -46,7 +36,7 @@
     </section>
 
     <section id='about' data-aos="flip-down" data-aos-offset="400">
-        <div class="img-container"></div>
+        <div class="img-container"><img src="./image/me.jpg" alt=""></div>
         <div class="about-me">
             <h2>About me</h2>
             <p>My name is Jingqian Zhuang. My husband and I live in Delft, the Netherlands.
@@ -75,7 +65,7 @@
                 <div class="right">
                     <div class="icon"></div>
                     <div class="text">
-                        <h3>App idea & UI</h3>
+                        <h3>App idea & prototype</h3>
                     </div>
                     <button type="button" class="collapsible">View the work</button>
                     <div class="content">
@@ -100,86 +90,36 @@
     </section>
         
     <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="slidescontainer">
-            <div class="slides">
-                <input type="radio" name="i" id="i1" checked>
-                <input type="radio" name="i" id="i2">
-                <input type="radio" name="i" id="i3">
-                <input type="radio" name="i" id="i4">
-                <input type="radio" name="i" id="i5">
-                <input type="radio" name="i" id="i6">
-                <input type="radio" name="i" id="i7">
-                <input type="radio" name="i" id="i8">
-                <div class="image" id="a">
-                    <div class="img">
-                        <img src="./image/i1.jpg" alt="boxing">
-                    </div>
-                    <div class="text">Barcelona, Spain</div>
-                    <label for="i8" class="left"></label>
-                    <label for="i2" class="right"></label>
-                </div>
-                <div class="image" id="b">
-                    <div class="img">
-                        <img src="./image/i2.jpg" alt="castle">
-                    </div>
-                    <div class="text">Château de Chenonceau, France</div>
-                    <label for="i1" class="left"></label>
-                    <label for="i3" class="right"></label>
-                </div>
-                <div class="image" id="c">
-                    <div class="img">
-                        <img src="./image/i3.jpg" alt="bunny">
-                    </div>
-                    <div class="text">Delft, the Netherlands</div>
-                    <label for="i2" class="left"></label>
-                    <label for="i4" class="right"></label>
-                </div>
-                <div class="image" id="d">
-                    <div class="img">
-                        <img src="./image/i4.jpg" alt="tempel">
-                    </div>
-                    <div class="text">Lianjiang, China</div>
-                    <label for="i3" class="left"></label>
-                    <label for="i5" class="right"></label>
-                </div>
-                <div class="image" id="e">
-                    <div class="img">
-                        <img src="./image/i5.jpg" alt="building">
-                    </div>
-                    <div class="text">Como, Italy</div>
-                    <label for="i4" class="left"></label>
-                    <label for="i6" class="right"></label>
-                </div>
-                <div class="image" id="f">
-                    <div class="img">
-                        <img src="./image/i6.jpg" alt="castle">
-                    </div>
-                    <div class="text">Maria Laach Abbey, Germany
-                    </div>
-                    <label for="i5" class="left"><img src="./image/arrow-left-color.png" alt=""></label>
-                    <label for="i7" class="right"><img src="./image/arrow-right-color.png" alt=""></label>
-                </div>
-                <div class="image" id="g">
-                    <div class="img">
-                        <img src="./image/i7.jpg" alt="castle">
-                    </div>
-                    <div class="text">Castle Keukenhof, the Netherlands
-                    </div>
-                    <label for="i6" class="left"></label>
-                    <label for="i8" class="right"></label>
-                </div>
-                <div class="image" id="h">
-                    <div class="img">
-                        <img src="./image/i8.jpg" alt="castle">
-                    </div>
-                    <div class="text">Kasteel Duivenvoorde, the Netherlands
-                    </div>
-                    <label for="i7" class="left"></label>
-                    <label for="i1" class="right"></label>
-                </div>
+        <div class="inner-width">
+            <h1>My Gallery</h1>
+            <div class="border"></div>
+            <div class="gallery">
+                <a href="./image/i1.jpg" class="image" data-title="Barcelona, Spain">
+                    <img src="./image/small1.jpg" alt="">
+                </a>
+                <a href="./image/i2.jpg" class="image" data-title="Barcelona, Spain">
+                    <img src="./image/small2.jpg" alt="Barcelona">
+                </a>
+                <a href="./image/i3.jpg" class="image" data-title="Barcelona, Spain">
+                    <img src="./image/small3.jpg" alt="">
+                </a>
+                <a href="./image/i4.jpg" class="image" data-title="Barcelona, Spain">
+                    <img src="./image/small4.jpg" alt="">
+                </a>
+                <a href="./image/i5.jpg" class="image"data-title="Barcelona, Spain">
+                    <img src="./image/small5.jpg" alt="">
+                </a>
+                <a href="./image/i6.jpg" class="image" data-title="Barcelona, Spain">
+                    <img src="./image/small6.jpg" alt="">
+                </a>
+                <a href="./image/i7.jpg" class="image" data-title="Barcelona, Spain">
+                    <img src="./image/small7.jpg" alt="">
+                </a>
+                <a href="./image/i8.jpg" class="image" data-title="Barcelona, Spain">
+                    <img src="./image/small8.jpg" alt="">
+                </a>
             </div>
-        </div>    
+        </div>
     </section>
 
     <div id="contact" data-aos="flip-down" data-aos-offset="0">
@@ -203,9 +143,11 @@
     </div>
     <footer>
         <div class="logo"><a href="#home">JQ</a></div>
-        <p>&copy; 2019 LAIBATRIP all copy right</p>
+        <p>&copy; 2019 Project developer Jingqian</p>
     </footer>
     <script defer src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 </body>
 </html>
