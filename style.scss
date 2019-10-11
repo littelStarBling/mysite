@@ -358,7 +358,7 @@ footer {
 }
 
 
-    @media only screen and (max-width: 600px) {
+    @media all and (max-width: 600px) and (min-width: 300px){
         #home .center-text {
                 width: 90%;
                 height: 70%;
@@ -397,8 +397,7 @@ footer {
         
 
     }
-
-    @media screen and (max-width: 800px) { 
+    @media all and (max-width: 800px) and (min-width: 600px) { 
         #about, #work {
             padding: 0;
         }
@@ -413,12 +412,14 @@ footer {
         }
      }
   
-     @media screen and (max-width: 600px) { 
+     @media all and (max-width: 800px) and (min-width: 600px) { 
         #gallery .inner-width .gallery .image {
             flex: 50%;
         }
      }
    
+
+     
     @media screen and (max-width: 800px) { 
         #contact .contact-box {
             flex-direction:column;
