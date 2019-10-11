@@ -358,7 +358,7 @@ footer {
 }
 
 
-    @media all and (max-width: 600px) and (min-width: 300px){
+    @media screen and (max-width: 600px){
         #home .center-text {
                 width: 90%;
                 height: 70%;
@@ -397,7 +397,7 @@ footer {
         
 
     }
-    @media all and (max-width: 800px) and (min-width: 600px) { 
+    @media screen and (max-width: 800px) { 
         #about, #work {
             padding: 0;
         }
@@ -412,7 +412,7 @@ footer {
         }
      }
   
-     @media all and (max-width: 800px) and (min-width: 600px) { 
+     @media screen and (max-width: 800px) { 
         #gallery .inner-width .gallery .image {
             flex: 50%;
         }
