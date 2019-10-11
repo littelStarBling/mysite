@@ -32,7 +32,7 @@ h2 {
 }
 
 #home {
-  height: 60vh;
+  height: 500px;
   width: 100%;
   background-image: url(./image/b2.jpg);
   background-size: cover;
@@ -127,8 +127,8 @@ h2 {
 
 .item {
   margin: 0.5rem 0.5rem;
-  -webkit-animation: anima    te 3s linear infinite;
-          animation: anima    te 3s linear infinite;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
   width: 2rem;
   height: 2rem;
 }
@@ -481,15 +481,12 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
-  #home {
-    height: 45vh;
-  }
   #home .center-text {
     width: 90%;
     height: 70%;
     padding: 1rem;
   }
-  #home .line {
+  .line {
     margin: 1rem auto 0;
   }
   .profile {
@@ -530,7 +527,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   #about, #work {
     padding: 0;
   }
@@ -547,7 +544,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #gallery .inner-width .gallery .image {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -555,7 +552,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   #contact .contact-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
