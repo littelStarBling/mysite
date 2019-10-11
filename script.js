@@ -11,7 +11,7 @@ $(".gallery").magnificPopup({
   }
 });
 
-const texts = ["I am Jingqian. Welcome to my blog.           "];
+const texts = ["I am Jingqian. Welcome to my blog.                                                               "];
 let count = 0;
 let index = 0;
 let currentText = "";

@@ -1,56 +1,62 @@
+
+$ptc: #333;
+$bgc: #f1f1f1;
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Chivo', sans-serif;
-    color: #333;
+    color:$ptc;
 }
+
+h1, h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 2rem;
+    color:$ptc;
+}
+
 h1 {
-    font-family: 'Montserrat', serif;
-    font-size: 2rem;
     font-weight: 900;
-    color: #333;
-    
 }
-h2 {
-    font-family: 'Montserrat', serif;
-    font-size: 2rem;
-    color: #333;
+
+h2, h3 { 
     font-weight: 700;
 }
 h3 {
     font-family: 'Chivo', serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #333;
-
+    color:$ptc;
 }
 
+h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+}  // usage
+
+
 #home {
-    height: 550px;
+    height: 60vh;
     width: 100%;
-    background: url(./image/img3.jpg);
+    background-image: url(./image/b2.jpg);
     background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     flex-direction: column; 
     background-attachment: fixed;
-    padding: 2rem 0;
+    align-items: center;
     .center-text {
-        display: flex;
-        width:80%;
-        max-width: 1200px;
-        height: 50%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(78, 78, 78, 0.4);
+        width:75%;
+        max-width: 1400px;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.6);
         border-radius: 2rem;
-        margin: 2rem auto;
-        padding: 1rem;
+        padding: 2rem 5rem;
+        display: flex;
+        align-items: center;
+        
+
         h1 {
             color: rgb(255, 255, 255);
-            
             .typing {
                 margin-left: 0.5rem;
                 font-family: 'Montserrat', serif;
@@ -69,63 +75,70 @@ h3 {
             }
         }
     }
-    
-
-    .profile {
-        padding: 2rem 0.5rem;
-        width: 100%;
-        max-width: 1200px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin:0 auto;
-        .item {
-            margin: 0.5rem 0.5rem;
-            animation: animate 3s linear infinite;
-            width: 2rem;
-            height: 2rem;
-            img{
-                object-fit: cover;
-            }
-        }
-    }
 }
-
 .line {
-    margin: 0 auto;
+    margin: 3rem auto 0;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1400px;
     height: 1px;
     background: radial-gradient(ellipse, rgb(68, 68, 68), transparent);
 }
 
-#about{
-    padding: 5rem 2rem 0rem 2rem;
+.profile {
     width: 100%;
-    max-width: 1200px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    .line1, .line2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+.item {
+    margin: 0.5rem 0.5rem;
+    animation: anima    te 3s linear infinite;
+    width: 2rem;
+    height: 2rem;
+    img{
+        object-fit: cover;
+    }
+}
+
+/* page2 */
+
+#about{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto 0;
+    padding: 3rem 0;
+}
+
     .img-container {
-        width: 80%;
+        width: 30%;
         height: auto;
-        margin:0 auto;
         img{
             width: 100%;
             height:auto;
-        }
-      }
-    .about-me {
-        margin-top:2rem;
-        text-align: center;
-        h2 {
-            margin-bottom: 2rem;
-        }
-        p {
-            text-align: center;
+            border-radius: 1rem;
         }
     }
+
+
+.about-me {
+    text-align: center;
+    width: 50%;
+    padding: 1rem 2rem;
+    p {
+        text-align: left;
+    }
 }
+
 @keyframes blink {
     0% {
         opacity: 0;
@@ -152,42 +165,46 @@ h3 {
     }
 }
 
-#work{
-    padding-top: 6rem;
-    h2 {
-        padding-bottom: 2rem;
-        text-align: center;
-    }
-    .work-box {
-        width: 100%;
-        max-width: 1200px;
-        margin:0 auto;
-        .work .content p a{
-            text-decoration: none;
-            color: rgb(158, 44, 9);
-        }
-        .one .icon {
-            background-image: url(./image/web.png);
-            background-size: cover;
-        }
-        .two .icon {
-            background-image: url("https://img.icons8.com/dusk/90/000000/app-symbol.png");
-            background-size: cover; 
-        }
-        .work{
-            padding-bottom: 2rem;
-            text-align: center;
-            .icon {
-                margin: 0 auto 1rem auto;
-                width: 6rem;
-                height: 6rem; 
-            }
-            .text h2 {
-            font-weight: 300;
-            }
-        }
+#work {
+    width: 100%;
+    margin: 5rem auto 0;
+    padding: 3rem 0;
+    .line-border{
+        margin-bottom: 6rem;
     }
 }
+    .work-box {
+        width: 70%;
+        margin:0 auto;
+        max-width: 1400px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .one .icon {
+        background-image: url(./image/web.png);
+        background-size: cover;
+    }
+    .two .icon {
+        background-image: url("https://img.icons8.com/dusk/90/000000/app-symbol.png");
+        background-size: cover; 
+    }
+
+    .work{
+        padding-bottom: 2rem;
+        text-align: center;
+        width: 48%;
+        .icon {
+            margin: 0 auto 1rem;
+            width: 6rem;
+            height: 6rem; 
+        }
+    }
+
+    .work .content p a{
+        text-decoration: none;
+        color: rgb(158, 44, 9);
+    }
 
   .collapsible {
     background-color: white;
@@ -214,7 +231,7 @@ h3 {
     margin: 0 auto;
     width: 100%;
     .video {
-        margin-bottom: 1rem;
+        margin:  0  auto 1rem;
         width: 15rem;
     }
     .text {
@@ -224,37 +241,39 @@ h3 {
         ul {
         list-style-image: url('./image/checked.png');
         margin: 0 1.3rem;
-        li {
-            padding: 0.2rem 0;
-        }
+            li {
+                padding: 0.2rem 0;
+            }
         }
     }
 }
 
+.line-border{
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 0 auto 2rem;
+  }
+
 #gallery {
     width: 100%;
-    padding: 60px 0;
-    background: #f1f1f1;
+    padding: 3rem 0;
+    margin: 5rem auto 0;
+    background: $bgc;
     .inner-width{
         width: 100%;
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         h1{
             text-align: center;
-            color: #333;
           }
-        .border{
-            width: 180px;
-            height: 4px;
-            background: #333;
-            margin: 60px auto;
-          }
+        
         .gallery{
             display: flex;
             flex-wrap: wrap-reverse;
             justify-content: center;
             .image{
-                flex: 50%;
+                flex: 12.5%;
                 overflow: hidden;
                 cursor: pointer;
                 img{
@@ -273,52 +292,60 @@ h3 {
 
 
 #contact {
-    padding: 1rem;
+    padding-top: 2rem;
+    background-image: url('./image/f1.jpg');
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    h2 {
+        color: white;
+        padding-bottom: 0;
+    }
+    .contact-box {
+        width: 100%;
+        max-width:1400px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+}
+
+.contact-box .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(167, 166, 166, 0.1), rgba(0, 0, 0, 0.9)),
-    url('./image/sea2.jpg');
-    background-size: cover;
-    background-position: top left;
-    background-attachment: fixed;
-    text-align: center;
-    flex-direction: column;
-    h2 {
-        color: white;
+    margin: 1rem;
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 1rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    .contact-box .box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem auto;
-        width: 100%;
-        max-width: 1200px;
-        .icon {
-            width: 1.5rem;
-            height: 1.5rem;
-            margin: 0 1rem;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-        p {
-            transform: translateY(5px);
-            color: white;
-            padding: 0;
-        }
+    p {
+        transform: translateY(5px);
+        color: white;
+        padding: 0;
     }
 }
+
+
+
 footer {
     padding: 0.5rem;
     width: 100%;
     background: #f1f1f1;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     .logo {
         font-size: 2rem;
         font-weight: 900;
+        margin-right: 1rem;
         a {
             color: rgb(253, 145, 95);
         }
@@ -326,94 +353,77 @@ footer {
     p {
         font-size: 0.8rem;
         font-weight: 300;
+        color: white;
     }
 }
 
-@media (min-width: 480px) {
-    #about, #work, #gallery {
-        padding-top: 4rem;
-    }
-     #contact {
-        flex-direction: row;
-        }
-}
 
-@media (min-width: 667px){
-    #contact {
-        flex-direction: column;
-    }
-    #about {
-        flex-direction: row;
-        align-items: center;
-        .img-container {
-            width: 40%;
-        }
-        .about-me {
-            width: 60%;
-            padding: 0 3rem;
-        }
-    }
-#work {
-    margin-left:  1rem;
-    margin-right: 1rem;
-    .work-box {
-        display: flex;
-        justify-content: space-evenly;
-        .work {
-            width: 48%;
-        }
-    }
-}
-    #contact .contact-box {
-        display: flex;
-        align-items: center;
-    }
-    #gallery .inner-width .gallery .image {
-            flex: 33.3%;
-    }        
-}
-
-
-@media screen and (min-width: 1024px){
-    #gallery .inner-width .gallery .image {
-        flex: 12.5%;
-    }            
-    #about , #work{
-        margin: 4rem auto;
-    }
-
-.work .right .content {
-    position: relative;
-    height: 60vh;
-        .video {
-            position: absolute;
-            top:0;
-            left:0;
-            width: 11rem;
-        }
-        .text {
-            width: 65%;
-            position: absolute;
-            top:0;
-            right:0;
-        }
-}
-
-#work {
-    margin-left:  1rem;
-    margin-right: 1rem;
-            .left {
-                width: 50%;
-                margin: 0 2rem 0 auto;
+    @media only screen and (max-width: 600px) {
+        #home {
+            height: 45vh;
+            .center-text {
+                width: 90%;
+                height: 70%;
+                padding: 1rem;
             }
-            .right {
-                width: 50%;
-                margin: 0 auto 0 2rem;
-                .content {
-                    width: 45vw;
-                    text-align: left;
-                }
+            .line{
+                margin:1rem auto 0;
             }
-    }
+        }
+        .profile {
+            flex-direction: column;
+        }
+        #about {
+            flex-direction: column;
+            .img-container{
+                width: 50%;
+            }
+            .about-me{
+                width:100%;
+            }
+        }
+        #work .line-border{
+                margin-bottom: 2rem;
+            }
+        .work-box{
+            flex-direction: column;
+            align-items: center;
+            }
+        
+        .left, .right{
+            margin: 0 auto;
+        }
+        .work{
+            width:100%;
+        }
+        
+     }
 
-}
+
+    @media only screen and (max-width: 800px) { 
+        #about, #work {
+            padding: 0;
+        }
+        #gallery{
+            margin-top:1rem;
+        }
+        #gallery .inner-width .gallery .image {
+            flex: 25%;
+        }
+        #work .work-box{
+                width: 100%;
+        }
+     }
+  
+     @media only screen and (max-width: 600px) { 
+        #gallery .inner-width .gallery .image {
+            flex: 50%;
+        }
+     }
+   
+    @media only screen and (max-width: 800px) { 
+        #contact .contact-box {
+            flex-direction:column;
+        }
+    }
+ 
